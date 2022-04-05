@@ -47,5 +47,16 @@ if __name__ == '__main__':
         turtle_league.forward(50)
         turtle_league.right(40)
     turtle_league.end_fill()
+
+
+    turtle_league.color("#00960d")
+    turtle_league.penup()
+    turtle_league.goto(-250,-250)
+    turtle_league.pendown()
+    turtle_league.begin_fill()
+    for i in range(8):
+        turtle_league.forward(40)
+        turtle_league.right(45)
+    turtle_league.end_fill()
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
