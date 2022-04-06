@@ -21,16 +21,33 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    bobby = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    bobby.shape('turtle')
     # Set the turtle width to 2
-    
+    bobby.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    bobby.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+    for i in range(25):
+        bobby.fillcolor(get_random_color())
+        bobby.begin_fill()
+        bobby.right(45)
+        bobby.forward(64)
+        bobby.left(40)
+        bobby.forward(flameSize)
+        bobby.right(170)
+        bobby.forward(flameSize)
+        bobby.right(62)
+        bobby.forward(baseSize)
+        bobby.end_fill()
+
+
+
+
+
+
         # Set the turtle .fillcolor() to orange
         
         # Call the turtle .begin_fill() function
